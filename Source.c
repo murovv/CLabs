@@ -1,8 +1,5 @@
-#include <windows.h>
 #include<stdio.h>
 int main(int argv, char** argc) {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
 	char c;
 	float f;
 	printf("input char: ");
