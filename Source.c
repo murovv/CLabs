@@ -5,10 +5,10 @@ int main(int argv, char** argc) {
 	SetConsoleOutputCP(1251);
 	char c;
 	float f;
-	printf("Введите символ: ");
+	printf("input char: ");
 	scanf_s("%c", &c);
-	printf("Введите вещественное число: ");
+	printf("input float: ");
 	scanf_s("%f", &f);
-	printf("Символ: %c\nВещественное число: %f", c, f);
+	printf(" char: %c\n float: %f", c, f);
 	return 0;
 }
