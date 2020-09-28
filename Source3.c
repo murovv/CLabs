@@ -7,6 +7,6 @@ int main() {
 	printf("%o\n", a);
 	printf("%o\n", (~a));
 	int b;
-	scanf_s("%x", &b);
-	printf("%x", (b & a));
+	scanf_s("%o", &b);
+	printf("%o", (b & a));
 }
