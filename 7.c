@@ -11,7 +11,7 @@ enum embeddedOS{
 };
 struct square
 {
-    int Ax,Ay,Dx,Dy;
+    int Ax,Ay,Dx,Dy,S;
     
 };
 union printer{
@@ -28,8 +28,9 @@ int main(){
     enum embeddedOS symbian;
     symbian = Symbian;
     printf("Symbian = %d\n",symbian);
-    struct square example = {0, 3 , -1 , 7};
+    struct square example = {0, 3 , -1 , 7,0};
     int S = (example.Ax-example.Dx)*(example.Ax-example.Dx)+(example.Ay-example.Dy)*(example.Ay-example.Dy);
+    example.S=S;
     int bits;
     scanf("%x",&bits);
     union printer printerExample;
